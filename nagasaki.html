@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Locator | Nagasaki Champon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" src="css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("user_iNzKF2rzdFiRJYsjXHre6");
+        })();
+    </script>
+</head>
+<body>
+
+    <section class="regional-hero">
+        <header>
+            <h2>NAGASAKI CHAMPON</h2>
+            <div class="regional-toggle"></div>
+        </header>
+
+        <div class="grid-container">
+            <div class="regional-img">
+                <img src="media/images/nagasaki.jpg" alt="nagasaki-ramen">
+            </div>
+
+            <div class="map-container">
+                <p>Ramen near you</p>
+                <div class="regional-map" id="map"></div>
+            </div>
+
+            <div class="regional-text">
+                <p>Although not specifically a type of ramen, champon is a regional dish from Nagasaki made with thick egg noodles that’s very similar. The noodles are cooked directly in soup, along with meat, vegetables, and seafood. Champon originated as a budget food for Chinese students studying in the Nagasaki area and fuses together Chinese and Japanese food cultures.</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-image-container">
+                <a href="index.html"><img class="menu-image" src="media/images/japan-flag.jpg" alt="japan-flag"><span>Home</span></a>
+            </div>
+            <p>Regional Ramen</p>
+            <ul class="menu-regional-container">
+                <li><a href="sapporo.html">Sapporo</a></li>
+                <li><a href="hakata.html">Hakata</a></li>
+                <li><a href="kitakata.html">Kitakata</a></li>
+                <li><a href="wakayama.html">Wakayama</a></li>
+                <li><a href="onomichi.html">Onomichi</a></li>
+                <li><a href="nagoya.html">Nagoya</a></li>
+                <li><a href="okinawa.html">Okinawa</a></li>
+                <li><a href="hakodate.html">Hakodate</a></li>
+                <li><a href="kurume.html">Kurume</a></li>
+                <li><a href="kagoshima.html">Nagoshima</a></li>
+                <li><a href="nagasaki.html">nagasaki</a></li>
+            </ul>
+            <ul>
+                <li><a href="game.html">Check your Ramen knowledge</a></li>
+                <li><a id="open">Join our mailing list</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">&copy 2020 FrancescoSP. All rights reserved</p>
+    </footer>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                 <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <h3>Subscribe to our newsletter to get the latest updates, recipes and news about the Ramen world</h3>
+                <img src="media/images/ramen-signup.jpg" alt="ramen-signup-pic">
+                <form class="modal-form">
+                    <input type="email" id="email" name="emailaddress" placeholder="Email address">
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+<script src="https://maps.googleapis.com/maps/api/js?callback=createMap&libraries=places&key=AIzaSyA0G7scjYelz97ub5ZCVHcGBohyiixI9s8" async defer></script>
+<script src="js/maps.js"></script>
+<script src="js/sendemail.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
