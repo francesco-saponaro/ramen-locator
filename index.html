@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen Locator | All about the Japanese magic bowl</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link type="text/css" rel="stylesheet" src="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -16,58 +16,84 @@
     </script>
 </head>
 <body>
-
     <section class="hero-section">
-        <header>
-            <h2>RAMEN LOCATOR</h2>
-            <h3>ALL ABOUT THE JAPANESE MAGIC BOWL</h3>
-            <div class="toggle"></div>
-        </header>
-
-        <video src="media/videos/ramen.mp4" muted loop autoplay></video>
-        <div class="overlay"></div>
-
+            <video src="media/videos/ramen-video.mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+        
         <div class="main-grid-container">
+            <header>
+                <h2>RAMEN LOCATOR</h2>
+                <h3>ALL ABOUT THE JAPANESE MAGIC BOWL</h3>
+                <div class="toggle"></div>
+            </header>
+
             <div class="map-container">
                 <p>Ramen near you</p>
                 <div class="main-map" id="map"></div>
             </div>
 
             <div class="main-text-container">
-                <p>Ramen is Japan's Ultimate Soul Food. Perhaps even the world's Ultimate Soul Food. There are now countless ramen types, from the heavy and thick to the light and springy.  If we start with the basics, there are 4 main ones, as shown below. 
-                Beyond the big 4, there are countless ramen types - whether regional specialties or modern ones out of Tokyo. What makes ramen wonderful is that it's constantly evolving. 
+                <p>Ramen is Japan's Ultimate Soul Food. Perhaps even the world's Ultimate Soul Food. There are now countless ramen types, from the heavy and thick to the light and springy.  If we start with the basics, there are 4 main ones, as shown below.<br>
+                Beyond the big 4, there are countless ramen types - whether regional specialties or modern ones out of Tokyo. What makes ramen wonderful is that it's constantly evolving.<br>
                 Navigate through our menu for Ramen by Japanese region/city</p>
             </div>
         </div>
-
-        <div class="menu">
-            <div class="menu-image-container">
-                <a href="index.html"><img class="menu-image" src="media/images/japan-flag.jpg" alt="japan-flag"><span>Home</span></a>
-            </div>
-            <p>Regional Ramen</p>
-            <ul class="menu-regional-container">
-                <li><a href="sapporo.html">Sapporo</a></li>
-                <li><a href="hakata.html">Hakata</a></li>
-                <li><a href="kitakata.html">Kitakata</a></li>
-                <li><a href="wakayama.html">Wakayama</a></li>
-                <li><a href="onomichi.html">Onomichi</a></li>
-                <li><a href="nagoya.html">Nagoya</a></li>
-                <li><a href="okinawa.html">Okinawa</a></li>
-                <li><a href="hakodate.html">Hakodate</a></li>
-                <li><a href="kurume.html">Kurume</a></li>
-                <li><a href="nagoshima.html">Nagoshima</a></li>
-                <li><a href="nagasaki.html">nagasaki</a></li>
-            </ul>
-            <ul>
-                <li><a href="game.html">Check your Ramen knowledge</a></li>
-                <li><a id="open">Join our mailing list</a></li>
-            </ul>
-        </div>
     </section>
+
+    <div class="menu">
+        <button class="close-menu-btn" id="close-menu">
+                 <i class="fa fa-times"></i>
+        </button>
+        <div class="menu-home-container">
+            <a class="menu-home" href="index.html">Home</a>
+        </div>
+        <div class="menu-regional-container">
+            <p>Regional Ramen</p>
+            <table class="table">
+                <tr>
+                <td><a href="sapporo.html">Sapporo</a></td>
+                </tr>
+                <tr>
+                <td><a href="hakata.html">Hakata</a></td>
+                </tr>
+                <tr>
+                <td><a href="kitakata.html">Kitakata</a></td>
+                </tr>
+                <tr>
+                <td><a href="wakayama.html">Wakayama</a></td>
+                </tr>
+                <tr>
+                <td><a href="onomichi.html">Onomichi</a></td>
+                </tr>
+                <tr>
+                <td><a href="nagoya.html">Nagoya</a></td>
+                </tr>
+                <tr>
+                <td><a href="okinawa.html">Okinawa</a></td>
+                </tr>
+                <tr>
+                <td><a href="hakodate.html">Hakodate</a></td>
+                </tr>
+                <tr>
+                <td><a href="kurume.html">Kurume</a></td>
+                </tr>
+                <tr>
+                <td><a href="nagoshima.html">Nagoshima</a></td>
+                </tr>
+                <tr>
+                <td><a href="nagasaki.html">Nagasaki</a></td>
+                </tr>
+            </table>
+        </div>
+        <ul>
+            <li><a href="game.html">Test your knowledge</a></li>
+            <li><a id="open">Join our mailing list</a></li>
+        </ul>
+    </div>
 
     <section class="tabs">
         <div class="tabs-container">
-            <div id="tab-shoyu" class="tab-item tab-border">
+            <div id="tab-shoyu" class="tab-item tab-active">
                 <p>Shoyu</p>
             </div>
             <div id="tab-shio" class="tab-item">
@@ -84,40 +110,40 @@
 
     <section class="tabs-content">
         <div class="tabs-content-container">
-            <div class="tab-shoyu-content show">
-                <img src="media/images/shoyu-ramen.png" alt="shoyu ramen" class="tab-images">
+            <div class="tab-shoyu-content show-tab">
+                <img src="media/images/shoyu-ramen.png" alt="shoyu ramen">
                 <p class="tab-text">Shoyu (soy sauce) is at the center of Japanese cuisine. So it's no wonder that shoyu ramen was the first ever ramen. While there's an insane amount of shoyu ramen variety, the broth is normally brown in color and naturally carries a salty, tangy flavor. In Tokyo's version, curly noodles are often used.</p>
             </div>
             <div class="tab-shio-content">
-                <img src="media/images/shio-ramen.png" alt="shio ramen" class="tab-images">
+                <img src="media/images/shio-ramen.png" alt="shio ramen">
                 <p class="tab-text">"Shio" literally means salt. But in a way, shio ramen can taste less salty than shoyu ramen. Its yellowish, clear broth has a contrastingly light and refreshing taste. The soup can be a blend of plenty of vegetables, along with chicken, and sometimes pork or fish. The noodles are usually straight and thin.</p>
             </div>
             <div class="tab-tonkotsu-content">
-                <img src="media/images/tonkotsu-ramen.png" alt="tonkotsu ramen" class="tab-images">
+                <img src="media/images/tonkotsu-ramen.png" alt="tonkotsu ramen">
                 <p class="tab-text">Probably the most popular ramen type outside of Japan, tonkotsu ramen has a cloudy and white colored broth. This happens after pork bones are boiled for hours and hours, providing a creamy and almost milky flavor. We have the island of Kyushu to thank for tonkotsu ramen, which originally started out as street stall food.</p>
             </div>
             <div class="tab-miso-content">
-                <img src="media/images/miso-ramen.png" alt="miso ramen" class="tab-images">
+                <img src="media/images/miso-ramen.png" alt="miso ramen">
                 <p class="tab-text">Miso ramen got its start at "Aji no Sanpei" in Sapporo, Hokkaido. While there are other miso ramen styles around the country, Sapporo's miso ramen is the most famous. It's known for being hearty and lardy - great for those cold Sapporo winters. In addition, butter and corn are popular toppings. </p>
             </div>
         </div>
     </section>
 
-    <section class="main-form">
-        <div class="main-form-container">
+    <section class="mailing-list">
+        <div class="mailing-list-container">
             <div class="form-text">
-                <h3>Join our mailing list</h3>
+                <h3>JOIN OUR MAILING LIST</h3>
                 <h4>Get the latest updates, recipes and news about the Ramen world</h4>
             </div>
             <form>
                 <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                <button class="button">Subscribe</button>
+                <button class="button">SUBSCRIBE</button>
             </form>
         </div>
     </section>
 
     <footer>
-        <p class="footer-text">&copy 2020 FrancescoSP. All rights reserved</p>
+        <p>&copy 2020 FrancescoSP. All rights reserved</p>
     </footer>
 
     <div class="modal-container" id="modal">
@@ -130,7 +156,7 @@
                 <img src="media/images/ramen-signup.jpg" alt="ramen-signup-pic">
                 <form class="modal-form">
                     <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                    <button class="button">Subscribe</button>
+                    <button class="button">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
