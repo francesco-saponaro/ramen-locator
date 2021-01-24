@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen Locator | Kagoshima Tonkotsu Ramen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link type="text/css" rel="stylesheet" src="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/regional.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
@@ -17,29 +18,36 @@
 </head>
 <body>
 
-    <section class="regional-hero">
-        <header>
-            <h2>KAGOSHIMA TONKOTSU RAMEN</h2>
+    <section class="regional-container">
+        <header class="regional-header">
+            <h2>KAGOSHIMA TONKOTSU</h2>
             <div class="regional-toggle"></div>
         </header>
 
-        <div class="grid-container">
-            <div class="regional-img">
+        <div class="regional-grid-container">
+            <div class="regional-img-container">
                 <img src="media/images/kagoshima.jpg" alt="kagoshima-ramen">
             </div>
 
-            <div class="map-container">
-                <p>Ramen near you</p>
+            <p class="regional-map-text">Ramen in Kagoshima</p>
+            <div class="regional-map-container">
                 <div class="regional-map" id="map"></div>
             </div>
-
-            <div class="regional-text">
-                <p>Kagoshima is the only place in Kyushu that wasn’t influenced by Kurume City’s heavy tonkotsu ramen. Instead, the ramen here uses a blended broth of pork, chicken, dried sardines, vegetables, and dried shiitake mushrooms topped with scorched scallions. The cloudy soup has a mild flavor that is quite distinctive from other Kyushu-area ramens.</p>
-            </div>
         </div>
+
+        <div class="regional-text">
+            <p>Kagoshima is the only place in Kyushu that wasn’t influenced by Kurume City’s heavy tonkotsu ramen. Instead, the ramen here uses a blended broth of pork, chicken, dried sardines, vegetables, and dried shiitake mushrooms topped with scorched scallions. The cloudy soup has a mild flavor that is quite distinctive from other Kyushu-area ramens.</p>
+        </div>
+        
+        <footer>
+            <p class="footer-text">&copy 2020 FrancescoSP. All rights reserved</p>
+        </footer>
     </section>
 
     <div class="menu">
+        <button class="close-menu-btn" id="close-menu">
+            <i class="fa fa-times"></i>
+        </button>
         <div class="menu-home-container">
             <a class="menu-home" href="index.html">Home</a>
         </div>
@@ -74,7 +82,7 @@
                 <td><a href="kurume.html">Kurume</a></td>
                 </tr>
                 <tr>
-                <td><a href="nagoshima.html">Nagoshima</a></td>
+                <td><a href="kagoshima.html">Kagoshima</a></td>
                 </tr>
                 <tr>
                 <td><a href="nagasaki.html">Nagasaki</a></td>
@@ -86,10 +94,6 @@
             <li><a id="open">Join our mailing list</a></li>
         </ul>
     </div>
-
-    <footer>
-        <p class="footer-text">&copy 2020 FrancescoSP. All rights reserved</p>
-    </footer>
 
     <div class="modal-container" id="modal">
         <div class="modal">

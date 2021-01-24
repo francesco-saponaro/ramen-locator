@@ -1,0 +1,236 @@
+.regional-container {
+    position: absolute;
+    right:0;
+    width:100%;
+    z-index:10;
+    transition:1s;
+    overflow:hidden;
+    background-color: #fff;
+}
+
+.regional-container.active {
+    right:300px;
+}
+
+.regional-header {
+    padding: 50px 50px 0 50px;
+}
+
+.regional-header h2 {
+    font-size: 600%;
+}
+
+.regional-grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:center;
+    align-items:center;
+    padding: 40px 50px 0 50px;
+    column-gap:4em;
+    row-gap:0.5em;
+}
+
+.regional-img-container {
+    width:100%;
+    height:280px;
+    grid-row:2/2
+}
+
+.regional-img-container img {
+    width:100%;
+    height: 100%;
+}
+
+.regional-map-container {
+    height:280px;
+    width:100%;
+    grid-row:2/2
+}
+
+.regional-map-text {
+    font-size: 150%;
+    grid-column: 2/2;
+}
+
+.regional-map {
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    background: coral;
+}
+
+.regional-text {
+    padding: 40px 50px 40px 50px;
+    font-size: 120%;
+    line-height: 1.4;
+    text-align: justify;
+}  
+
+/**MEDIA QUERIES**/
+@media (min-width:1400px) {
+    .regional-header h2 {
+        font-size: 8em;
+    }
+    .regional-img-container {
+        height: 400px;
+    }
+    .regional-map-container {
+        height:400px;
+    }
+    .regional-map-text {
+        font-size: 2em;
+    }
+    .regional-text {
+        font-size:1.8em;
+    }
+}
+
+@media (min-width:1650px) {
+    .regional-flex-container {
+        padding: 50px 50px 25px 50px;
+        margin-top:0;
+    }
+    .regional-img-container {
+        height: 500px;
+    }
+    .regional-map-container {
+        height:500px;
+    }
+    .regional-text {
+        font-size:2.5em;
+    }
+    .regional-header h2 {
+        font-size: 12em;
+        margin-top: 50px;
+    }
+    .regional-map-text {
+        font-size: 2.8em;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1280px) and (min-height: 800px) and (max-height: 800px) {
+    .regional-img-container {
+        height: 350px;
+    }
+    .regional-map-container {
+        height:350px;
+    }
+    .regional-map-text {
+        font-size: 2.5em;
+    }
+    .regional-text {
+        font-size:1.8em;
+    }
+}
+
+@media (max-width:1100px) {
+    .regional-header h2 {
+        font-size:5.5em;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) and (min-height: 1365px) and (max-height: 1367px) {
+    .regional-img-container {
+        height: 450px;
+    }
+    .regional-map-container {
+        height: 450px;
+    }
+    .regional-header h2 {
+        font-size: 7em;
+    }
+    .regional-map-text {
+        font-size: 2.5em;
+    }
+    .regional-text {
+        font-size: 2.1em;
+    }
+}
+
+@media (max-width:1000px) {
+    .regional-header h2 {
+        font-size:5em;
+    }
+}
+
+@media (max-width:900px) {
+    .regional-header h2 {
+        font-size:4.5em;
+    }
+}
+
+@media (max-width:850px) {
+    .regional-grid-container {
+        display:block
+    }
+    .regional-header h2 {
+        font-size:5.1em;
+    }
+    .regional-grid-container {
+        padding: 40px 50px 0 50px;
+    }
+    .regional-img-container {
+        width: 90%;
+        margin: 0 auto;
+        height:100%;
+    }
+    .regional-map-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .regional-map-text {
+        margin: 25px 0 10px 0;
+        text-align: center;
+        font-size:170%;
+    }
+    .regional-text {
+        font-size:150%;
+    }
+}
+
+@media (max-width:550px) {
+    .regional-header h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:420px) {
+    .regional-img-container {
+        height: 200px;
+        width: 100%;
+    }
+    .regional-map-container {
+        height: 200px;
+        width: 100%;
+    }
+    .regional-map-text {
+        font-size: 1.2em;
+    }
+    .regional-text {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:360px) {
+    .regional-header h2 {
+        font-size: 2.5em;
+    }
+    .regional-img-container {
+        height: 150px;
+    }
+    .regional-map-container {
+        height:150px;
+    }
+    .regional-text {
+        font-size: 1em;
+    }
+}
+
+ @media (max-width:320px) {
+    .regional-img-container {
+        height: 130px;
+    }
+    .regional-map-container {
+        height:130px;
+    }
+}

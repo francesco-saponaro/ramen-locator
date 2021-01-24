@@ -16,33 +16,90 @@
     </script>
 </head>
 <body>
-    <section class="hero-section">
+    <div class="container active">
+        <section class="hero-section">
             <video src="media/videos/ramen-video.mp4" muted loop autoplay></video>
             <div class="overlay"></div>
-        
-        <div class="main-grid-container">
-            <header>
-                <h2>RAMEN LOCATOR</h2>
-                <h3>ALL ABOUT THE JAPANESE MAGIC BOWL</h3>
-                <div class="toggle"></div>
-            </header>
+            
+            <div class="main-grid-container">
+                <header>
+                    <h2>RAMEN LOCATOR</h2>
+                    <h3>ALL ABOUT THE JAPANESE MAGIC BOWL</h3>
+                    <div class="toggle"></div>
+                </header>
 
-            <div class="map-container">
-                <p>Ramen near you</p>
-                <div class="main-map" id="map"></div>
-            </div>
+                <p class="map-text">Ramen near you</p>
+                <div class="map-container">
+                    <div class="main-map" id="map"></div>
+                </div>
 
-            <div class="main-text-container">
-                <p>Ramen is Japan's Ultimate Soul Food. Perhaps even the world's Ultimate Soul Food. There are now countless ramen types, from the heavy and thick to the light and springy.  If we start with the basics, there are 4 main ones, as shown below.<br>
-                Beyond the big 4, there are countless ramen types - whether regional specialties or modern ones out of Tokyo. What makes ramen wonderful is that it's constantly evolving.<br>
-                Navigate through our menu for Ramen by Japanese region/city</p>
+                <div class="main-text-container">
+                    <p>Ramen is Japan's Ultimate Soul Food. Perhaps even the world's Ultimate Soul Food. There are now countless ramen types, from the heavy and thick to the light and springy.  If we start with the basics, there are 4 main ones, as shown below.<br>
+                    Beyond the big 4, there are countless ramen types - whether regional specialties or modern ones out of Tokyo. What makes ramen wonderful is that it's constantly evolving.<br>
+                    Navigate through our menu for Ramen by Japanese region/city</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="tabs">
+            <div class="tabs-container">
+                <div id="tab-shoyu" class="tab-item tab-active">
+                    <p>Shoyu</p>
+                </div>
+                <div id="tab-shio" class="tab-item">
+                    <p>Shio</p>
+                </div>
+                <div id="tab-tonkotsu" class="tab-item">
+                    <p>Tonkotsu</p>
+                </div>
+                <div id="tab-miso" class="tab-item">
+                    <p>Miso</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-content">
+            <div class="tabs-content-container">
+                <div class="tab-shoyu-content show-tab">
+                    <img src="media/images/shoyu-ramen.png" alt="shoyu ramen">
+                    <p class="tab-text">Shoyu (soy sauce) is at the center of Japanese cuisine. So it's no wonder that shoyu ramen was the first ever ramen. While there's an insane amount of shoyu ramen variety, the broth is normally brown in color and naturally carries a salty, tangy flavor. In Tokyo's version, curly noodles are often used.</p>
+                </div>
+                <div class="tab-shio-content">
+                    <img src="media/images/shio-ramen.png" alt="shio ramen">
+                    <p class="tab-text">"Shio" literally means salt. But in a way, shio ramen can taste less salty than shoyu ramen. Its yellowish, clear broth has a contrastingly light and refreshing taste. The soup can be a blend of plenty of vegetables, along with chicken, and sometimes pork or fish. The noodles are usually straight and thin.</p>
+                </div>
+                <div class="tab-tonkotsu-content">
+                    <img src="media/images/tonkotsu-ramen.png" alt="tonkotsu ramen">
+                    <p class="tab-text">Probably the most popular ramen type outside of Japan, tonkotsu ramen has a cloudy and white colored broth. This happens after pork bones are boiled for hours and hours, providing a creamy and almost milky flavor. We have the island of Kyushu to thank for tonkotsu ramen, which originally started out as street stall food.</p>
+                </div>
+                <div class="tab-miso-content">
+                    <img src="media/images/miso-ramen.png" alt="miso ramen">
+                    <p class="tab-text">Miso ramen got its start at "Aji no Sanpei" in Sapporo, Hokkaido. While there are other miso ramen styles around the country, Sapporo's miso ramen is the most famous. It's known for being hearty and lardy - great for those cold Sapporo winters. In addition, butter and corn are popular toppings. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mailing-list">
+            <div class="mailing-list-container">
+                <div class="form-text">
+                    <h3>JOIN OUR MAILING LIST</h3>
+                    <h4>Get the latest updates, recipes and news about the Ramen world</h4>
+                </div>
+                <form>
+                    <input type="email" id="email" name="emailaddress" placeholder="Email address">
+                    <button class="button">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy 2020 FrancescoSP. All rights reserved</p>
+        </footer>
+    </div>
 
     <div class="menu">
         <button class="close-menu-btn" id="close-menu">
-                 <i class="fa fa-times"></i>
+            <i class="fa fa-times"></i>
         </button>
         <div class="menu-home-container">
             <a class="menu-home" href="index.html">Home</a>
@@ -78,7 +135,7 @@
                 <td><a href="kurume.html">Kurume</a></td>
                 </tr>
                 <tr>
-                <td><a href="nagoshima.html">Nagoshima</a></td>
+                <td><a href="kagoshima.html">Kagoshima</a></td>
                 </tr>
                 <tr>
                 <td><a href="nagasaki.html">Nagasaki</a></td>
@@ -90,61 +147,6 @@
             <li><a id="open">Join our mailing list</a></li>
         </ul>
     </div>
-
-    <section class="tabs">
-        <div class="tabs-container">
-            <div id="tab-shoyu" class="tab-item tab-active">
-                <p>Shoyu</p>
-            </div>
-            <div id="tab-shio" class="tab-item">
-                <p>Shio</p>
-            </div>
-            <div id="tab-tonkotsu" class="tab-item">
-                <p>Tonkotsu</p>
-            </div>
-            <div id="tab-miso" class="tab-item">
-                <p>Miso</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="tabs-content">
-        <div class="tabs-content-container">
-            <div class="tab-shoyu-content show-tab">
-                <img src="media/images/shoyu-ramen.png" alt="shoyu ramen">
-                <p class="tab-text">Shoyu (soy sauce) is at the center of Japanese cuisine. So it's no wonder that shoyu ramen was the first ever ramen. While there's an insane amount of shoyu ramen variety, the broth is normally brown in color and naturally carries a salty, tangy flavor. In Tokyo's version, curly noodles are often used.</p>
-            </div>
-            <div class="tab-shio-content">
-                <img src="media/images/shio-ramen.png" alt="shio ramen">
-                <p class="tab-text">"Shio" literally means salt. But in a way, shio ramen can taste less salty than shoyu ramen. Its yellowish, clear broth has a contrastingly light and refreshing taste. The soup can be a blend of plenty of vegetables, along with chicken, and sometimes pork or fish. The noodles are usually straight and thin.</p>
-            </div>
-            <div class="tab-tonkotsu-content">
-                <img src="media/images/tonkotsu-ramen.png" alt="tonkotsu ramen">
-                <p class="tab-text">Probably the most popular ramen type outside of Japan, tonkotsu ramen has a cloudy and white colored broth. This happens after pork bones are boiled for hours and hours, providing a creamy and almost milky flavor. We have the island of Kyushu to thank for tonkotsu ramen, which originally started out as street stall food.</p>
-            </div>
-            <div class="tab-miso-content">
-                <img src="media/images/miso-ramen.png" alt="miso ramen">
-                <p class="tab-text">Miso ramen got its start at "Aji no Sanpei" in Sapporo, Hokkaido. While there are other miso ramen styles around the country, Sapporo's miso ramen is the most famous. It's known for being hearty and lardy - great for those cold Sapporo winters. In addition, butter and corn are popular toppings. </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="mailing-list">
-        <div class="mailing-list-container">
-            <div class="form-text">
-                <h3>JOIN OUR MAILING LIST</h3>
-                <h4>Get the latest updates, recipes and news about the Ramen world</h4>
-            </div>
-            <form>
-                <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                <button class="button">SUBSCRIBE</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy 2020 FrancescoSP. All rights reserved</p>
-    </footer>
 
     <div class="modal-container" id="modal">
         <div class="modal">
