@@ -32,7 +32,7 @@
 
 .regional-img-container {
     width:100%;
-    height:280px;
+    height:300px;
     grid-row:2/2
 }
 
@@ -42,7 +42,7 @@
 }
 
 .regional-map-container {
-    height:280px;
+    height:300px;
     width:100%;
     grid-row:2/2
 }
@@ -66,6 +66,9 @@
     text-align: justify;
 }  
 
+.red-color {
+    color: #db0404;
+}
 /**MEDIA QUERIES**/
 @media (min-width:1400px) {
     .regional-header h2 {
@@ -191,6 +194,7 @@
 @media (max-width:550px) {
     .regional-header h2 {
         font-size: 3em;
+        text-align: center;
     }
 }
 
