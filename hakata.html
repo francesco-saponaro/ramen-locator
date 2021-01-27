@@ -103,9 +103,9 @@
             <div class="modal-content">
                 <h3>Subscribe to our newsletter to get the latest updates, recipes and news about the Ramen world</h3>
                 <img src="media/images/ramen-signup.jpg" alt="ramen-signup-pic">
-                <form class="modal-form">
-                    <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                    <button class="button">Subscribe</button>
+                <form class="modal-form" onsubmit="return sendMail(this);">
+                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" required>
+                    <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>
         </div>

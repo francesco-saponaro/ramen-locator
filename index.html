@@ -85,9 +85,9 @@
                     <h3>JOIN OUR MAILING LIST</h3>
                     <h4>Get the latest updates, recipes and news about the Ramen world</h4>
                 </div>
-                <form>
-                    <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                    <button class="button">SUBSCRIBE</button>
+                <form id="form" onsubmit="return sendMail(this);">
+                    <input type="email" id="email" name="emailaddress" placeholder="Email address" required>
+                    <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>
         </section>
@@ -143,7 +143,7 @@
             </table>
         </div>
         <ul>
-            <li><a href="game.html">Test your knowledge</a></li>
+            <li><a href="quiz.html">Test your knowledge</a></li>
             <li><a id="modal-open">Join our mailing list</a></li>
         </ul>
     </div>
@@ -156,9 +156,9 @@
             <div class="modal-content">
                 <h3>Subscribe to our newsletter to get the latest updates, recipes and news about the Ramen world</h3>
                 <img src="media/images/ramen-signup.jpg" alt="ramen-signup-pic">
-                <form class="modal-form">
-                    <input type="email" id="email" name="emailaddress" placeholder="Email address">
-                    <button class="button">SUBSCRIBE</button>
+                <form class="modal-form" onsubmit="return sendMail(this);">
+                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" required>
+                    <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>
         </div>

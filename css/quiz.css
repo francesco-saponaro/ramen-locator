@@ -1,0 +1,131 @@
+.quiz-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom:50px;
+    background-color: #989292;
+}
+
+.questions {
+    background-color: #3d3d3d;
+    color:#f4f4f4;
+    font-size:150%;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin:50px 50px 0 50px;
+    width:50%;
+}
+
+.question {
+    background-color: #db0404;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding:30px;
+    display:flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.q-number {
+    min-width:50px;
+    min-height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color:#3d3d3d;
+    border:2px solid #3d3d3d;
+}
+
+.question h4 {
+    margin-left:10px;
+}
+
+.answers {
+    padding:15px 30px 30px 30px;
+}
+
+input[type="radio"] {
+    margin:20px 5px 0 0;
+    transform: scale(1.8);
+}
+
+.quiz-btn {
+    margin-top: 50px;
+    padding:15px;
+    font-size:150%;
+    font-weight: bold;
+    cursor:pointer;
+    border:2px solid #3d3d3d;
+    background-color: #db0404;
+    color:#f4f4f4;
+    box-shadow: 2px 2px 2px #3d3d3d;
+    border-radius: 10px;
+    width:50%;
+}
+
+.quiz-btn:focus {
+    outline: none;
+}
+
+.quiz-btn:hover {
+    transform: scale(1.1);
+}
+
+.red-color {
+    color:red;
+}
+
+.green-color {
+    color:green;
+}
+
+/**MEDIA QUERIES**/
+@media (max-width:1000px) {
+    .questions {
+        font-size:1em;
+    }
+}
+
+@media (max-width:770px) {
+    .questions {
+        font-size:0.9em;
+    }
+    .q-number {
+    min-width:40px;
+    min-height:40px;
+}
+}
+
+@media (max-width:620px) {
+    .questions {
+        font-size:0.8em;
+    }
+}
+
+@media (max-width:550px) {
+    .question {
+        flex-direction: column;
+        padding:15px;
+    }
+    .question h4 {
+        margin-top:10px;
+    }
+    .quiz-btn {
+        font-size:1em;
+    }
+}
+
+@media (max-width:370px) {
+    .quiz-btn {
+        font-size:0.9em;
+    }
+}
+
+@media (max-width:350px) {
+    .quiz-btn {
+        font-size:0.8em;
+    }
+}
