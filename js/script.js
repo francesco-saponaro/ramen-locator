@@ -8,24 +8,29 @@ let modalClose = document.getElementById("modal-close");
 let modal = document.getElementById("modal");
 
 //EVENT LISTENERS
+//show menu
 toggle.addEventListener("click", function() {
     toggle.classList.add("active");
     container.classList.add("active");
 });
 
+//close menu
 closeMenu.addEventListener("click", function() {
     toggle.classList.remove("active");
     container.classList.remove("active");
 });
 
+//open modal
 modalOpen.addEventListener("click", function() {
     modal.classList.add("show-modal");
 })
 
+//close modal
 modalClose.addEventListener("click", function() {
     modal.classList.remove("show-modal");
 })
 
+//close modal on window click
 window.addEventListener("click", function(e) {
     if(e.target === modal) {
         modal.classList.remove("show-modal");
@@ -34,27 +39,30 @@ window.addEventListener("click", function(e) {
     }
 })
 
+//main-menu tab selector
 tabItem.forEach(function(item) {
      item.addEventListener("click", selectItem);
 })
 
 //TAB SELECTOR FUNCTIONS
 function selectItem() {
-    removeBorder();
-    removeTab();
+    removeTabActive();
+    removeTabContent();
     
     this.classList.add("tab-active");
     let tabContentItem = document.querySelector(`#${this.id}-content`);
     tabContentItem.classList.add("show-tab");
 }
 
-function removeBorder() {
+//remove active tab
+function removeTabActive() {
     tabItem.forEach(function(item) {
         item.classList.remove("tab-active");
     })
 }
 
-function removeTab() {
+//remove active tab content
+function removeTabContent() {
     tabContentItem.forEach(function(item) {
         item.classList.remove("show-tab");
     })

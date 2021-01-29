@@ -1,4 +1,5 @@
 /**QUIZ FORM**/
+/**quiz container**/
 #quiz {
     display:flex;
     align-items:center;
@@ -8,6 +9,7 @@
     background-color: #989292;
 }
 
+/**questions container**/
 .questions {
     background-color: #3d3d3d;
     color:#f4f4f4;
@@ -53,6 +55,7 @@ input[type="radio"] {
     transform: scale(1.8);
 }
 
+/**submission button**/
 .quiz-btn {
     margin-top: 50px;
     padding:15px;
@@ -76,6 +79,7 @@ input[type="radio"] {
 }
 
 /**QUIZ MODAL**/
+/**quiz modal container**/
 .quiz-modal-container {
     display:none;
     position:fixed;
@@ -91,6 +95,7 @@ input[type="radio"] {
     display:block;
 }
 
+/**quiz modal**/
 .quiz-modal {
     position:absolute;
     overflow: hidden;
@@ -138,6 +143,8 @@ input[type="radio"] {
 
 .quiz-modal img {
     width:35%;
+    height:35%;
+    border-radius:50%;
 }
 
 @keyframes modalopen {

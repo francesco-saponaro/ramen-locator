@@ -5,25 +5,31 @@ let modalOpen = document.getElementById("modal-open");
 let modalClose = document.getElementById("modal-close");
 let modal = document.getElementById("modal");
 
+//EVENT LISTENERS
+//show menu
 toggle.addEventListener("click", function() {
     toggle.classList.add("active");
     regContainer.classList.add("active");
 });
 
+//close menu
 closeMenu.addEventListener("click", function() {
     toggle.classList.remove("active");
     regContainer.classList.remove("active");
 
 });
 
+//open modal
 modalOpen.addEventListener("click", function() {
     modal.classList.add("show-modal");
 })
 
+//close modal
 modalClose.addEventListener("click", function() {
     modal.classList.remove("show-modal");
 })
 
+//close modal on window click
 window.addEventListener("click", function(e) {
     if(e.target === modal) {
         modal.classList.remove("show-modal");
@@ -31,17 +37,3 @@ window.addEventListener("click", function(e) {
         return false;
     }
 })
-
-    /**let header = document.getElementById("header-color");
-    let str = header.innerHTML;
-    let headerChange = "";
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] == "a") {
-             headerChange += str.charAt(i).fontcolor("red");
-        } else {
-             headerChange += str[i];
-        }
-    }
-    header.innerHTML = headerChange;**/
-
-

@@ -16,8 +16,6 @@ let form = document.getElementById("form");
 let modalForm = document.querySelectorAll(".modal-form");
 let email = document.getElementById("email");
 let modalEmail = document.querySelectorAll(".modal-email");
-console.log(modalForm);
-console.log(modalEmail);
 
 function clearValue(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -26,7 +24,7 @@ function clearValue(input) {
   }
 }
 
-//main page mailing list event listener
+//all pages modal form event listener
 modalForm.forEach(function(forms) {
     forms.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -36,7 +34,7 @@ modalForm.forEach(function(forms) {
     });
 });
 
-//modal form event listener
+//main page mailing list event listener
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   clearValue(email);

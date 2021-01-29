@@ -1,7 +1,6 @@
 let quizModal = document.getElementById("quiz-modal");
-let result = document.getElementById("result");
-let imgResult = document.getElementById("image-result");
 let resultClose = document.getElementById("result-close");
+let modalCnt = document.querySelector(".modal-content");
 let c = 0;
 
 //CHECK RESULT ON SUBMISSION
@@ -36,29 +35,37 @@ function testResult() {
 //SUCCESS FUNCTION
 function success() {
     quizModal.classList.add("show-result");
-    result.innerText = `Congratulations! You are a true Ramen Sensei!`;
+    modalCnt.innerHTML = `
+        <h3 id="result">Congratulations! You are a true Ramen Sensei!</h3>
+        <img id="image-result" src="media/images/success-quiz.jpg" alt="ramen-signup-pic">
+    `
 }
 
 //FAILURE FUNCTION
 function failure() {
     quizModal.classList.add("show-result");
-    result.innerText = `Failed! Your result is ${c}`;
+    modalCnt.innerHTML = `
+        <h3 id="result">Failed! Your result is ${c}</h3>
+        <img id="image-result" src="media/images/failed-quiz.jpg" alt="ramen-signup-pic">
+    `
 }
 
 //EVENT LISTENERS
-//remove modal, rest score and reload page
+//remove modal, reset score and reload page
 resultClose.addEventListener("click", function() {
     quizModal.classList.remove("show-result");
     c = 0;
     location.reload();
+    window.scrollTo(0, 0);
 })
 
-//remove modal on window click
+//remove modal, reset score and reload page on window click
 window.addEventListener("click", function(e) {
     if(e.target === quizModal) {
         quizModal.classList.remove("show-result");
         c = 0;
         location.reload();
+        window.scrollTo(0, 0);
     } else {
         return false;
     }

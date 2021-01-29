@@ -1,3 +1,4 @@
+/**REGIONAL CONTAINER**/
 .regional-container {
     position: absolute;
     right:0;
@@ -12,6 +13,7 @@
     right:300px;
 }
 
+/**REGIONAL HEADER**/
 .regional-header {
     padding: 50px 50px 0 50px;
 }
@@ -20,6 +22,7 @@
     font-size: 600%;
 }
 
+/**REGIONAL GRID**/
 .regional-grid-container {
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -30,6 +33,7 @@
     row-gap:0.5em;
 }
 
+/**regional image**/
 .regional-img-container {
     width:100%;
     height:300px;
@@ -41,6 +45,7 @@
     height: 100%;
 }
 
+/**regional map**/
 .regional-map-container {
     height:300px;
     width:100%;
@@ -63,6 +68,7 @@
     outline:none;
 }
 
+/**regional text**/
 .regional-text {
     padding: 40px 50px 40px 50px;
     font-size: 120%;
@@ -73,6 +79,7 @@
 .red-color {
     color: #db0404;
 }
+
 /**MEDIA QUERIES**/
 @media (min-width:1400px) {
     .regional-header h2 {
