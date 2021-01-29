@@ -9,6 +9,20 @@
     background-color: #989292;
 }
 
+.quiz-home-icon {
+    position:absolute;
+    top:30px;
+    right:30px;
+    width: 65px;
+    height:65px;
+    border-radius:50%;
+    background: url(/media/images/ramen-menu-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    cursor:pointer;
+}
+
 /**questions container**/
 .questions {
     background-color: #3d3d3d;
@@ -201,11 +215,19 @@ input[type="radio"] {
     .quiz-btn {
         font-size:1em;
     }
+    .quiz-home-icon {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width:480px) {
     .quiz-modal h3 {
         font-size: 100%;
+    }
+    .quiz-home-icon {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -220,6 +242,10 @@ input[type="radio"] {
     .close-btn {
         font-size:120%;
         right:2px;
+    }
+    .quiz-home-icon {
+        top: 20px;
+        right: 20px;
     }
 }
 

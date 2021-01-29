@@ -25,19 +25,38 @@ function testResult() {
     if(a8 == "correct") {c++;};
     if(a9 == "correct") {c++;};
     if(a10 == "correct") {c++;};
-    if(c === 10) {
-        success();
-    } else {
+    if(missedAnswersCheck() === true){
+        missedAnswers();
+    } else if(c < 10) {
         failure();
+    } else {
+        success();
     }
 }
 
-//SUCCESS FUNCTION
-function success() {
+//MISSED ANSWERS CHECK FUNCTION
+function missedAnswersCheck() {
+    let selectedOption1 = document.querySelector("input[name=answer1]:checked");
+    let selectedOption2 = document.querySelector("input[name=answer2]:checked");
+    let selectedOption3 = document.querySelector("input[name=answer3]:checked");
+    let selectedOption4 = document.querySelector("input[name=answer4]:checked");
+    let selectedOption5 = document.querySelector("input[name=answer5]:checked");
+    let selectedOption6 = document.querySelector("input[name=answer6]:checked");
+    let selectedOption7 = document.querySelector("input[name=answer7]:checked");
+    let selectedOption8 = document.querySelector("input[name=answer8]:checked");
+    let selectedOption9 = document.querySelector("input[name=answer9]:checked");
+    let selectedOption10 = document.querySelector("input[name=answer10]:checked");
+    if(!selectedOption1 || !selectedOption2 || !selectedOption3 || !selectedOption4 || !selectedOption5 || !selectedOption6 || !selectedOption7 || !selectedOption8 || !selectedOption9 || !selectedOption10) {
+       return true;
+    }
+}
+
+//MISSED ANSWERS FUNCTION
+function missedAnswers() {
     quizModal.classList.add("show-result");
     modalCnt.innerHTML = `
-        <h3 id="result">Congratulations! You are a true Ramen Sensei!</h3>
-        <img id="image-result" src="media/images/success-quiz.jpg" alt="ramen-signup-pic">
+        <h3 id="result">You must answer all questions. Keep going!</h3>
+        <img id="image-result" src="media/images/missed-quiz.jpg" alt="missed-quiz-pic">
     `
 }
 
@@ -46,7 +65,16 @@ function failure() {
     quizModal.classList.add("show-result");
     modalCnt.innerHTML = `
         <h3 id="result">Failed! Your result is ${c}</h3>
-        <img id="image-result" src="media/images/failed-quiz.jpg" alt="ramen-signup-pic">
+        <img id="image-result" src="media/images/failed-quiz.jpg" alt="failed-quiz-pic">
+    `
+}
+
+//SUCCESS FUNCTION
+function success() {
+    quizModal.classList.add("show-result");
+    modalCnt.innerHTML = `
+        <h3 id="result">Congratulations! You are a true Ramen Sensei!</h3>
+        <img id="image-result" src="media/images/success-quiz.jpg" alt="success-quiz-pic">
     `
 }
 
@@ -55,8 +83,12 @@ function failure() {
 resultClose.addEventListener("click", function() {
     quizModal.classList.remove("show-result");
     c = 0;
-    location.reload();
-    window.scrollTo(0, 0);
+    if(missedAnswersCheck() === true){
+        return;
+    } else {
+        location.reload();
+        window.scrollTo(0, 0);
+    }
 })
 
 //remove modal, reset score and reload page on window click
@@ -64,8 +96,12 @@ window.addEventListener("click", function(e) {
     if(e.target === quizModal) {
         quizModal.classList.remove("show-result");
         c = 0;
-        location.reload();
-        window.scrollTo(0, 0);
+        if(missedAnswersCheck() === true){
+            return;
+        } else {
+            location.reload();
+            window.scrollTo(0, 0);
+        }
     } else {
         return false;
     }

@@ -16,6 +16,7 @@ let form = document.getElementById("form");
 let modalForm = document.querySelectorAll(".modal-form");
 let email = document.getElementById("email");
 let modalEmail = document.querySelectorAll(".modal-email");
+let modalCnt = document.querySelector(".modal-content");
 
 function clearValue(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -30,6 +31,10 @@ modalForm.forEach(function(forms) {
         e.preventDefault();
         modalEmail.forEach(function(emails) {
             clearValue(emails);
+            modalCnt.innerHTML = `
+            <h3>Welcome to the Ramen world!</h3>
+            <img src="media/images/submission-pic.jpg" alt="successful-form">
+        `
         });
     });
 });
