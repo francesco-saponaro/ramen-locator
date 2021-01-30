@@ -35,6 +35,7 @@ modalForm.forEach(function(forms) {
                 <h3>Welcome to the Ramen world!</h3>
                 <img src="media/images/submission-pic.jpg" alt="submission-pic">
             `
+            //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
         });
     });
 });
