@@ -32,9 +32,9 @@ modalForm.forEach(function(forms) {
         modalEmail.forEach(function(emails) {
             clearValue(emails);
             modalCnt.innerHTML = `
-            <h3>Welcome to the Ramen world!</h3>
-            <img src="media/images/submission-pic.jpg" alt="successful-form">
-        `
+                <h3>Welcome to the Ramen world!</h3>
+                <img src="media/images/submission-pic.jpg" alt="submission-pic">
+            `
         });
     });
 });

@@ -28,12 +28,14 @@ modalOpen.addEventListener("click", function() {
 //close modal
 modalClose.addEventListener("click", function() {
     modal.classList.remove("show-modal");
+    location.reload();
 })
 
 //close modal on window click
 window.addEventListener("click", function(e) {
     if(e.target === modal) {
         modal.classList.remove("show-modal");
+        location.reload();
     } else {
         return false;
     }
