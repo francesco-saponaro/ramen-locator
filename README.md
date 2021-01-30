@@ -66,6 +66,50 @@ They can exit the menu by clicking on the Times closing icon.
     * The project uses EmailJS API to allow sending emails using client side technologies only, without requiring a server.
 
 # Testing
+## Validations
+* [Home page HMTL validation](/media/validations/index-validation.png)
+    * Two warnings showing, however, Headings are absolutely not needed
+* [Regional Pages HTML validation](/media/validations/regional-validation.png)
+* [Quiz page HTML validation](/media/validations/quiz-validation.png)
+* [Style.css validation](/media/validations/style.css-validation.png)
+* [Regional.css validation](/media/validations/regional.css-validation.png)
+* [Quiz.css validation](/media/validations/quiz.css-validation.png)
+
+## Lighthouse
+
+
+
+
+## Client stories testing
+The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link
+### Testing client stories from UX section
+#### As a user I want:
+* To know where the nearest Ramen restaurant is, so I can choose where to eat either on the same day or imminently.
+    * As soon as the user lands in the Home page he will see a geolocator map.
+* To learn about the types of Ramen available, so I can have more information on what to order next time I eat Ramen.
+    * In the Home page, the user has access to four switchable tabs, which give the opportunity, thanks to Javascript, to check all four types of Ramen while staying in the Home page.
+* To know about different types of Ramen depending on the Japanese region, so I can make an informed decision when I plan my trip.
+    * From the slider menu, which is accessible from every page with the exception of the quiz page, the user can navigate to every regional page available. 
+* To sign up to the Newsletter mailer, so I can be up to date with the latest news, recipes and updates regarding the Ramen world.
+    * The user can sign up to the Newsletter either through the sign up form in the main page, or through the modal which is accessible from the slider menu, which in turn is accessible on every page.
+* To test my Ramen skills as a recreational time.
+    * The user can take the Ramen knowledge quiz accessible through the slider menu, which is accessible from every page.
+
+## Browsers
+* Mozilla, Chrome, Edge and Safari all display same projected layout and have no issues and at any screen sizes.
+*  Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map
+
+## Screen sizes
+* The website is responsive through percentages and media queries, starting from a screen size as small as 280px to as large as 1680px.
+* All features are available and visible on every screen size.
+
+## Bugs discovered
+* Safari was not auto-playing or even displaying the Home page video. I then published the website and finally worked. The issue was for it to work it cannot be on Local host
+
+
+
+
+
 
 # Deployment 
 
@@ -96,6 +140,4 @@ They can exit the menu by clicking on the Times closing icon.
 * The Images of the Form submission Modals and Quiz results Modals were sourced at <a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
 * The Main Page Tab content Images were sourced at [Tokyo Ramen Tours](https://www.tokyoramentours.com/post/ramen-types-big-4)
 * The Regional Ramen dish images were sourced at [Gurunavi](https://gurunavi.com/en/japanfoodie/2018/02/regional-ramen.html)
-
-## Acknowledgments
 
