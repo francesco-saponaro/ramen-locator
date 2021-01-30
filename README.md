@@ -76,9 +76,8 @@ They can exit the menu by clicking on the Times closing icon.
 * [Quiz.css validation](/media/validations/quiz.css-validation.png)
 
 ## Lighthouse
-
-
-
+* I have optimized and resized the autoplay video for better web performance
+* I have resized the four tabs images for better performance and loading times
 
 ## Client stories testing
 The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link
