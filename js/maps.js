@@ -288,7 +288,7 @@ function createMarker(place) {
     let marker = new google.maps.Marker({
         map:map,
         position: place.geometry.location,
-        icon: "/media/images/ramen-map-icon.svg"
+        icon: "../media/images/ramen-map-icon.svg"
     });
     google.maps.event.addListener(marker, "click", function() {
         infowindow.setContent(place.name);
