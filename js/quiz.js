@@ -56,7 +56,7 @@ function missedAnswers() {
     quizModal.classList.add("show-result");
     modalCnt.innerHTML = `
         <h3 id="result">You must answer all questions. Keep going!</h3>
-        <img id="image-result" src="media/images/missed-quiz.jpg" alt="missed-quiz-pic">
+        <img id="image-result" src="media/images/missed-quiz.webp" alt="missed-quiz-pic">
     `
     //<a href='https://www.freepik.com/vectors/cartoon'>Cartoon vector created by catalyststuff - www.freepik.com</a>
 }
@@ -66,7 +66,7 @@ function failure() {
     quizModal.classList.add("show-result");
     modalCnt.innerHTML = `
         <h3 id="result">Failed! Your result is ${c}</h3>
-        <img id="image-result" src="media/images/failed-quiz.jpg" alt="failed-quiz-pic">
+        <img id="image-result" src="media/images/failed-quiz.webp" alt="failed-quiz-pic">
     `
     //<a href='https://www.freepik.com/vectors/cartoon'>Cartoon vector created by catalyststuff - www.freepik.com</a>
 }
@@ -76,7 +76,7 @@ function success() {
     quizModal.classList.add("show-result");
     modalCnt.innerHTML = `
         <h3 id="result">Congratulations! You are a true Ramen Sensei!</h3>
-        <img id="image-result" src="media/images/success-quiz.jpg" alt="success-quiz-pic">
+        <img id="image-result" src="media/images/success-quiz.webp" alt="success-quiz-pic">
     `
     //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
 }

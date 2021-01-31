@@ -18,7 +18,7 @@ The website is meant to be an helping hand, for both travellers and Ramen enthus
 ## Design Choices
 The overall feel of the website is designed to be playful and inclined towards the Japanese Animation and Manga culture. The following design choices were made with this in mind:
 ### Fonts
-* The Balsamiq Sans font was chosen as it resembles the fonts seen in Comic books, thus recreating the feel specified above
+* The Balsamiq Sans font was chosen as it resembles the fonts seen in Comic books, thus recreating the feel specified above.
 ### Icons
 * All Icons were chosen keeping in mind the Comic book and playful feel specified above.
 ### Colours
@@ -32,7 +32,7 @@ The overall feel of the website is designed to be playful and inclined towards t
 * The Images of the Form submission and Quiz results Modals were chosen to further give the user the playful and Comic Book feel specified above.
 
 ## Wireframes
-[Link to Wireframes](/media/wireframes/ramen-locator-wireframe.pdf)
+[Link to Wireframes](//francesc-droid.github.io/ramen-locator/media/wireframes/ramen-locator-wireframe.pdf)
 
 # Features
 ## Existing features
@@ -44,7 +44,7 @@ They can exit the menu by clicking on the Times closing icon.
 * Regional Ramen type pages - Allows first time or returning users to learn more about specific Ramen types by Japanese region, by clicking on the relevant page.
 * Google map by region - Allows first time or returning users to check the Ramen restaurants location for each region available, by clicking on the relevant region and navigating through it's map.
 * Sign up modal - Allows first time or returning users to sign up to the Newsletter mailer, by filling up the modal form.
-* Ramen quiz - Allows first time or returning users to test their Ramen knowledge by taking the Quiz via the link on the slider menu
+* Ramen quiz - Allows first time or returning users to test their Ramen knowledge by taking the Quiz via the link on the slider menu.
 ## Potential features
 * How to cook Ramen section - It would allow first time or returning users see instruction and guidelines on how to cook homemade Ramen. 
 * Ramen shop section - It would allow first time or returning users to buy Ramen cooking items or Ramen paraphernaelia.
@@ -76,11 +76,11 @@ They can exit the menu by clicking on the Times closing icon.
 * [Quiz.css validation](/media/validations/quiz.css-validation.png)
 
 ## Lighthouse
-* I have optimized and resized the autoplay video for better web performance
-* I have resized the four tabs images for better performance and loading times
+* I have optimized and resized the autoplay video for better web performance.
+* I have resized the four tabs images for better performance and loading times.
 
 ## Client stories testing
-The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link
+The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link.
 ### Testing client stories from UX section
 #### As a user I want:
 * To know where the nearest Ramen restaurant is, so I can choose where to eat either on the same day or imminently.
@@ -96,17 +96,49 @@ The website flow is designed so that every page is accessible through the slider
 
 ## Browsers
 * Mozilla, Chrome, Edge and Safari all display same projected layout and have no issues and at any screen sizes.
-*  Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map
+*  Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map.
 
 ## Screen sizes
 * The website is responsive through percentages and media queries, starting from a screen size as small as 280px to as large as 1680px.
 * All features are available and visible on every screen size.
 
 ## Bugs discovered
-* Safari was not auto-playing or even displaying the Home page video. I then published the website and finally worked. The issue was for it to work it cannot be on Local host
-* Map marker icons, menu icons and quiz home page icon were not working on deployed version. I have changed the path from relative to absolute and now they work correctly
+* Safari was not auto-playing or even displaying the Home page video. I then published the website and finally worked. The issue was for it to work it cannot be on Local host.
+* Map marker icons, menu icons and quiz home page icon were not working on deployed version. I have changed the path from relative to absolute and now they work correctly.
 
 # Deployment 
+This project was developed using Gitpod, committed to Github and pushed to Github using the built in function.
+
+To deploy this page to Github Pages from it's [Github repository](https://github.com/francesc-droid/ramen-locator), the following steps were taken:
+1. Log into Github.
+2. From the list of repositories on the screen, select "ramen-locator".
+3. From the menu items near the top of the page, select "Settings".
+4. Scroll down to the Github pages section.
+5. Under "Source" click the drop down menu labelled "None" and select "Main" branch.
+6. Click "Save" and the website is now deployed.
+7. Above "Source" you will find the link to the deployed website.
+
+## How to run this project locally
+To clone this project into Gitpod you will need:
+1. A Github account. Create a Github account [here](https://github.com/).
+2. Use the Chrome browser.
+
+Then follow these steps:
+1. Install the Gitpod browser extension for Chrome.
+2. After installation restart the browser.
+3. Log into Github with your Github account.
+4. Navigate to the project Github repository.
+5. Click the green "Gitpod" button.
+6. This will trigger a new Gitpod workspace to be created from the code in Github where you can work locally.
+
+To work on the project code within a local IDE such as VSCode etc.
+1. Follow this link to the [Project Github repository](https://github.com/francesc-droid/ramen-locator).
+2. Under the repository name, click "Code" and then "Clone" or "Download ZIP".
+3. In the "Clone with the HTTPs" section, copy the clone URL for the repository.
+4. In your local IDE, open the terminal.
+5. Change the current working directory to the location where you want the directory to be cloned.
+6. Type "git clone",  and then paste the URL you copied in step 3.
+7. Press "Enter" and your local clone will be created.
 
 # Credits
 ## Code
