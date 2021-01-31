@@ -73,6 +73,12 @@
     opacity:0;
 }
 
+header span {
+    position: absolute;
+    bottom: 13px;
+    left: 10px;
+}
+
 /**grid-container**/
 .main-grid-container {
     display:grid;
@@ -556,6 +562,11 @@ footer p {
 }
 
 @media (min-width:1650px) {
+    header span {
+        font-size: 2em;
+        bottom: 28px;
+        left: 26px;
+    }
     .map-container {
         height:700px;
     }
@@ -657,6 +668,11 @@ footer p {
 }
 
 @media (min-width: 1024px) and (max-width: 1024px) and (min-height: 1366px) and (max-height: 1366px) {
+    header span {
+        font-size: 1.8em;
+        bottom: 28px;
+        left: 21px;
+    }
     .map-container {
         height: 550px;
         margin-top:20px;
@@ -784,6 +800,10 @@ footer p {
         width: 80px;
         height:80px;
     }
+    header span {
+        bottom: 18px;
+        left: 18px;
+    }
     .mailing-list .form-text h3 {
         font-size: 2em;
     }
@@ -801,6 +821,11 @@ footer p {
         right:25px;
         width:50px;
         height:50px;
+    }
+    header span {
+        font-size: 0.7em;
+        bottom: 10px;
+        left: 10px;
     }
     header h2 {
         font-size:3.5em;
@@ -835,6 +860,10 @@ footer p {
         right:12px;
         width: 45px;
         height:45px;
+    }
+    header span {
+        font-size: 0.6em;
+        left: 9px;
     }
     .hero-section {
         padding: 25px 20px 25px 20px;
@@ -931,6 +960,11 @@ footer p {
         right:12px;
         width: 40px;
         height:40px;
+    }
+    header span {
+        font-size: 0.5em;
+        bottom: 9px;
+        left: 9px;
     }
     .mailing-list form input {
         width:650px;

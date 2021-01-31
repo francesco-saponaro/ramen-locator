@@ -32,7 +32,7 @@ The overall feel of the website is designed to be playful and inclined towards t
 * The Images of the Form submission and Quiz results Modals were chosen to further give the user the playful and Comic Book feel specified above.
 
 ## Wireframes
-[Link to Wireframes](/media/wireframes/ramen-locator.pdf)
+[Link to Wireframes](/media/wireframes/ramen-locator-wireframe.pdf)
 
 # Features
 ## Existing features
@@ -104,11 +104,7 @@ The website flow is designed so that every page is accessible through the slider
 
 ## Bugs discovered
 * Safari was not auto-playing or even displaying the Home page video. I then published the website and finally worked. The issue was for it to work it cannot be on Local host
-
-
-
-
-
+* Map marker icons, menu icons and quiz home page icon were not working on deployed version. I have changed the path from relative to absolute and now they work correctly
 
 # Deployment 
 

@@ -23,6 +23,13 @@
     cursor:pointer;
 }
 
+.quiz-home-title {
+    position: absolute;
+    bottom: -25px;
+    left: 10px;
+    color: #fff;
+}
+
 /**questions container**/
 .questions {
     background-color: #3d3d3d;
@@ -219,6 +226,11 @@ input[type="radio"] {
         width: 50px;
         height: 50px;
     }
+    .quiz-home-title {
+        font-size: 0.8em;
+        bottom: -20px;
+        left: 8px;
+    }
 }
 
 @media (max-width:480px) {
@@ -228,6 +240,11 @@ input[type="radio"] {
     .quiz-home-icon {
         width: 40px;
         height: 40px;
+    }
+    .quiz-home-title {
+        font-size: 0.7em;
+        bottom: -17px;
+        left: 5px;
     }
 }
 
