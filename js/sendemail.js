@@ -4,12 +4,12 @@ function sendMail(contactForm) {
         "from_email": contactForm.emailaddress.value
     })
     .then(function(response) {
-        console.log("SUCCESS", response)
+        console.log("SUCCESS", response);
     }, function(error) {
-        console.log("ERROR", error)
-    })
+        console.log("ERROR", error);
+    });
     return false;  
-};
+}
 
 //CLEAR TEXT ON SUBMISSION
 let form = document.getElementById("form");
@@ -34,7 +34,7 @@ modalForm.forEach(function(forms) {
             modalCnt.innerHTML = `
                 <h3>Welcome to the Ramen world!</h3>
                 <img src="media/images/submission-pic.webp" alt="submission-pic">
-            `
+            `;
             //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
         });
     });

@@ -26,13 +26,14 @@ function mainMap() {
                 radius: 30000,
                 keyword: ["ramen"]
             };
-            infowindow = new google.maps.InfoWindow;
+
+            infowindow = new google.maps.InfoWindow();
             service = new google.maps.places.PlacesService(map);
             service.nearbySearch(request, callback);
     
         }, function() {
             handleLocationError("Geolocation service failed", map.center);
-        })
+        });
     } else {
         handleLocationError("No geolocation available", map.center);
     }
@@ -52,13 +53,13 @@ function hakataMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", hakataMap);
-};
+}
 
 //sapporo map
 function sapporoMap() {
@@ -73,13 +74,13 @@ function sapporoMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", sapporoMap);
-};
+}
 
 //kitakata map
 function kitakataMap() {
@@ -94,13 +95,13 @@ function kitakataMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", kitakataMap);
-};
+}
 
 //wakayama map
 function wakayamaMap() {
@@ -115,13 +116,13 @@ function wakayamaMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", wakayamaMap);
-};
+}
 
 //onomichi map
 function onomichiMap() {
@@ -136,13 +137,13 @@ function onomichiMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", onomichiMap);
-};
+}
 
 //nagoya map
 function nagoyaMap() {
@@ -157,13 +158,13 @@ function nagoyaMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", nagoyaMap);
-};
+}
 
 //okinawa map
 function okinawaMap() {
@@ -178,13 +179,13 @@ function okinawaMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", okinawaMap);
-};
+}
 
 //hakodate map
 function hakodateMap() {
@@ -199,13 +200,13 @@ function hakodateMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", hakodateMap);
-};
+}
 
 //kurume map
 function kurumeMap() {
@@ -220,13 +221,13 @@ function kurumeMap() {
         location:center,
         radius:30000,
         keyword: ["tonkotsu"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", kurumeMap);
-};
+}
 
 //kagoshima map
 function kagoshimaMap() {
@@ -241,13 +242,13 @@ function kagoshimaMap() {
         location:center,
         radius:30000,
         keyword: ["ramen"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", kagoshimaMap);
-};
+}
 
 //nagasaki map
 function nagasakiMap() {
@@ -262,13 +263,13 @@ function nagasakiMap() {
         location:center,
         radius:30000,
         keyword: ["champon"]
-    }
-    infowindow = new google.maps.InfoWindow;
+    };
+    infowindow = new google.maps.InfoWindow();
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 
     google.maps.event.addDomListener(window, "load", nagasakiMap);
-};
+}
 
 //LOCATION ERROR FUNCTION
 function handleLocationError(content, pos) {

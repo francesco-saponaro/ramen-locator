@@ -71,9 +71,15 @@ They can exit the menu by clicking on the Times closing icon.
     * Two warnings showing, however, Headings are absolutely not needed
 * [Regional Pages HTML validation](/media/validations/regional-validation.png)
 * [Quiz page HTML validation](/media/validations/quiz-validation.png)
-* [Style.css validation](/media/validations/style.css-validation.png)
-* [Regional.css validation](/media/validations/regional.css-validation.png)
-* [Quiz.css validation](/media/validations/quiz.css-validation.png)
+* [style.css validation](/media/validations/style.css-validation.png)
+* [regional.css validation](/media/validations/regional.css-validation.png)
+* [quiz.css validation](/media/validations/quiz.css-validation.png)
+* [maps.js validation](/media/validations/maps-validation.png)
+* [quiz.js validation](/media/validations/quiz-validation.png)
+* [regional.js validation](/media/validations/regional-validation.png)
+* [script.js validation](/media/validations/script-validation.png)
+* [sendemail.js validation](/media/validations/sendemail-validation.png)
+
 
 ## Lighthouse
 * I have optimized and resized the autoplay video for better web performance.

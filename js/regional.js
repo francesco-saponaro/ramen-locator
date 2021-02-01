@@ -22,13 +22,13 @@ closeMenu.addEventListener("click", function() {
 //open modal
 modalOpen.addEventListener("click", function() {
     modal.classList.add("show-modal");
-})
+});
 
 //close modal
 modalClose.addEventListener("click", function() {
     modal.classList.remove("show-modal");
     location.reload();
-})
+});
 
 //close modal on window click
 window.addEventListener("click", function(e) {
@@ -38,4 +38,4 @@ window.addEventListener("click", function(e) {
     } else {
         return false;
     }
-})
+});

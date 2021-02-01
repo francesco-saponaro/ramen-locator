@@ -15,16 +15,16 @@ function testResult() {
     let a8 = document.quiz.answer8.value;
     let a9 = document.quiz.answer9.value;
     let a10 = document.quiz.answer10.value;
-    if(a1 == "correct") {c++;};
-    if(a2 == "correct") {c++;};
-    if(a3 == "correct") {c++;};
-    if(a4 == "correct") {c++;};
-    if(a5 == "correct") {c++;};
-    if(a6 == "correct") {c++;};
-    if(a7 == "correct") {c++;};
-    if(a8 == "correct") {c++;};
-    if(a9 == "correct") {c++;};
-    if(a10 == "correct") {c++;};
+    if(a1 == "correct") {c++;}
+    if(a2 == "correct") {c++;}
+    if(a3 == "correct") {c++;}
+    if(a4 == "correct") {c++;}
+    if(a5 == "correct") {c++;}
+    if(a6 == "correct") {c++;}
+    if(a7 == "correct") {c++;}
+    if(a8 == "correct") {c++;}
+    if(a9 == "correct") {c++;}
+    if(a10 == "correct") {c++;}
     if(missedAnswersCheck() === true){
         missedAnswers();
     } else if(c < 10) {
@@ -57,7 +57,7 @@ function missedAnswers() {
     modalCnt.innerHTML = `
         <h3 id="result">You must answer all questions. Keep going!</h3>
         <img id="image-result" src="media/images/missed-quiz.webp" alt="missed-quiz-pic">
-    `
+    `;
     //<a href='https://www.freepik.com/vectors/cartoon'>Cartoon vector created by catalyststuff - www.freepik.com</a>
 }
 
@@ -67,7 +67,7 @@ function failure() {
     modalCnt.innerHTML = `
         <h3 id="result">Failed! Your result is ${c}</h3>
         <img id="image-result" src="media/images/failed-quiz.webp" alt="failed-quiz-pic">
-    `
+    `;
     //<a href='https://www.freepik.com/vectors/cartoon'>Cartoon vector created by catalyststuff - www.freepik.com</a>
 }
 
@@ -77,7 +77,7 @@ function success() {
     modalCnt.innerHTML = `
         <h3 id="result">Congratulations! You are a true Ramen Sensei!</h3>
         <img id="image-result" src="media/images/success-quiz.webp" alt="success-quiz-pic">
-    `
+    `;
     //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
 }
 
@@ -92,7 +92,7 @@ resultClose.addEventListener("click", function() {
         location.reload();
         window.scrollTo(0, 0);
     }
-})
+});
 
 //remove modal, reset score and reload page on window click
 window.addEventListener("click", function(e) {
@@ -108,6 +108,6 @@ window.addEventListener("click", function(e) {
     } else {
         return false;
     }
-})
+});
 
    
