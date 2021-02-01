@@ -16,6 +16,7 @@
     color:#fff;
     overflow:hidden;
     z-index:10;
+    background-color: #3d3d3d;
 }
 
 .container.active {
