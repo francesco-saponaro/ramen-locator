@@ -31,10 +31,10 @@ function mainMap() {
             service.nearbySearch(request, callback);
     
         }, function() {
-            handleLocationError("Geolocation service failed", map.center());
+            handleLocationError("Geolocation service failed", map.center);
         })
     } else {
-        handleLocationError("No geolocation available", map.center());
+        handleLocationError("No geolocation available", map.center);
     }
     google.maps.event.addDomListener(window, "load", mainMap);
 }
