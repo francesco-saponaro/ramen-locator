@@ -67,13 +67,17 @@ They can exit the menu by clicking on the Times closing icon.
 
 # Testing
 ## Validations
+### HTML
 * [Home page HMTL validation](/media/validations/index-validation.png)
     * Two warnings showing, however, Headings are absolutely not needed
 * [Regional Pages HTML validation](/media/validations/regional-validation.png)
 * [Quiz page HTML validation](/media/validations/quiz-validation.png)
+### CSS
 * [style.css validation](/media/validations/style.css-validation.png)
 * [regional.css validation](/media/validations/regional.css-validation.png)
 * [quiz.css validation](/media/validations/quiz.css-validation.png)
+### JavaScript
+All JShint results show warnings about the usage of "let" or "template literals". However as suggested by the course module I always use "let" to declare a variable. 
 * [maps.js validation](/media/validations/maps-validation.png)
 * [quiz.js validation](/media/validations/quiz-validation.png)
 * [regional.js validation](/media/validations/regional-validation.png)
@@ -82,8 +86,8 @@ They can exit the menu by clicking on the Times closing icon.
 
 
 ## Lighthouse
-* I have optimized and resized the autoplay video for better web performance.
-* I have converted all images to webp format for better performance and loading times.
+* I have optimized and resized the autoplay video for better web performance and loading times.
+* I have converted most images to webp format for better performance and loading times.
 
 ## Client stories testing
 The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link.
@@ -102,7 +106,8 @@ The website flow is designed so that every page is accessible through the slider
 
 ## Browsers
 * Mozilla, Chrome, Edge and Safari all display same projected layout and have no issues and at any screen sizes.
-*  Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map.
+* Webp image format supported on all browsers except Safari macOS, however it is being implemented in the last version of Safari 14. They already work correctly on safari iOS
+* Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map.
 
 ## Screen sizes
 * The website is responsive through percentages and media queries, starting from a screen size as small as 280px to as large as 1680px.

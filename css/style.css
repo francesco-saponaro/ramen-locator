@@ -344,7 +344,8 @@ header h3 {
     display:flex;
     align-items:center;
     justify-content:center;
-    width:100%;
+    max-width: 100%;
+    margin: 0 20px;
 }
  
 .mailing-list form input {
@@ -902,10 +903,10 @@ footer p {
         font-size: 1em;
     }
     .menu ul li:first-of-type {
-        margin-top: 50px;
+        margin-top: 35px;
     }
     .menu ul li {
-        margin-top: 50px;
+        margin-top: 35px;
     }
     footer p {
         font-size: 0.8em;
