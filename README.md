@@ -89,15 +89,29 @@ The website flow is designed so that every page is accessible through the slider
 ### Testing client stories from UX section
 #### As a user I want:
 * To know where the nearest Ramen restaurant is, so I can choose where to eat either on the same day or imminently.
-    * As soon as the user lands in the Home page he will see a geolocator map.
+    * As soon as the user lands in the Home page he will see a geolocator map:  
+
+    ![Geolocator](/media/stories-screenshots/geolocator.png)
 * To learn about the types of Ramen available, so I can have more information on what to order next time I eat Ramen.
-    * In the Home page, the user has access to four switchable tabs, which give the opportunity, thanks to Javascript, to check all four types of Ramen while staying in the Home page.
+    * In the Home page, the user has access to four switchable tabs, which give the opportunity, thanks to Javascript, to check all four types of Ramen while staying in the Home page:  
+
+    ![Tabs](/media/stories-screenshots/tabs.png)
 * To know about different types of Ramen depending on the Japanese region, so I can make an informed decision when I plan my trip.
-    * From the slider menu, which is accessible from every page with the exception of the quiz page, the user can navigate to every regional page available. 
+    * From the slider menu, which is accessible from every page with the exception of the quiz page, the user can navigate to every regional page available:  
+
+    ![Menu](/media/stories-screenshots/menu.png)
+    ![Regional page](/media/stories-screenshots/regional.png)
+    ![Regional page menu](/media/stories-screenshots/regionalmenu.png)
 * To sign up to the Newsletter mailer, so I can be up to date with the latest news, recipes and updates regarding the Ramen world.
-    * The user can sign up to the Newsletter either through the sign up form in the main page, or through the modal which is accessible from the slider menu, which in turn is accessible on every page.
+    * The user can sign up to the Newsletter either through the sign up form in the main page, or through the modal which is accessible from the slider menu, which in turn is accessible on every page:  
+
+    ![Mailing list form](/media/stories-screenshots/mailingform.png)
+    ![Main page modal](/media/stories-screenshots/modalmain.png)
+    ![Regional page modal](/media/stories-screenshots/modalregional.png)
 * To test my Ramen skills as a recreational time.
-    * The user can take the Ramen knowledge quiz accessible through the slider menu, which is accessible from every page.
+    * The user can take the Ramen knowledge quiz accessible through the slider menu, which is accessible from every page:  
+    
+    ![Quiz](/media/stories-screenshots/quiz.png)
 
 ## Lighthouse
 * The video was taking a long time to load and was delaying the loading of the rest of the page. I have optimized and resized the autoplay video for better web performance and loading times.
