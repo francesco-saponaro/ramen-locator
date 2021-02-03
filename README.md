@@ -84,11 +84,6 @@ All JShint results show warnings about the usage of "let" or "template literals"
 * [script.js validation](/media/validations/script-validation.png)
 * [sendemail.js validation](/media/validations/sendemail-validation.png)
 
-
-## Lighthouse
-* I have optimized and resized the autoplay video for better web performance and loading times.
-* I have converted most images to webp format for better performance and loading times.
-
 ## Client stories testing
 The website flow is designed so that every page is accessible through the slider menu, which is present at every page. The only exception is the quiz page, which only has an home page link.
 ### Testing client stories from UX section
@@ -104,9 +99,13 @@ The website flow is designed so that every page is accessible through the slider
 * To test my Ramen skills as a recreational time.
     * The user can take the Ramen knowledge quiz accessible through the slider menu, which is accessible from every page.
 
+## Lighthouse
+* The video was taking a long time to load and was delaying the loading of the rest of the page. I have optimized and resized the autoplay video for better web performance and loading times.
+* The images were taking a long time to load and were delaying the loading of the rest of the page.I have converted most images to webp format for better performance and loading times.
+
 ## Browsers
 * Mozilla, Chrome, Edge and Safari all display same projected layout and have no issues and at any screen sizes.
-* Webp image format supported on all browsers except Safari macOS, however it is being implemented in the last version of Safari 14. They already work correctly on safari iOS
+* Webp image format supported on all browsers except Safari macOS, however it is being implemented in the last version of Safari 14. They already work correctly on safari iOS.
 * Mozilla, Chrome, Edge and Safari display an "allow location" alert which requires authorisation in order to show the geolocation in the map.
 
 ## Screen sizes
@@ -116,6 +115,7 @@ The website flow is designed so that every page is accessible through the slider
 ## Bugs discovered
 * Safari was not auto-playing or even displaying the Home page video. I then published the website and finally worked. The issue was for it to work it cannot be on Local host.
 * Map marker icons, menu icons and quiz home page icon were not working on deployed version. I have changed the path from relative to absolute and now they work correctly.
+* An 404 error message regarding the favicon was displaying on console. I have added a favicon, after which it disappeared.
 
 # Deployment 
 This project was developed using Gitpod, committed to Github and pushed to Github using the built in function.
@@ -153,6 +153,8 @@ To work on the project code within a local IDE such as VSCode etc.
 
 # Credits
 ## Code
+### HTML
+* The pattern "regex" on both the mailing list and modals email input was taken from [Geek for geeks](https://www.geeksforgeeks.org/html-dom-input-email-pattern-property/)
 ### JavaScript
 * The Maps JavaScript code was researched through The Google Maps and Places API pages and various Youtube instructional videos
 * The "selectItem" function in the script.js file was taken from [Traversy Media](https://www.traversymedia.com/)
@@ -171,6 +173,7 @@ To work on the project code within a local IDE such as VSCode etc.
 ### Video
 * The video was sourced at [Pexels](https://www.pexels.com/video/person-using-chopsticks-getting-food-4224218/) - Video by alleksana from Pexels  
 ### Icons
+* The favicon was sourced at <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> 
 * The Main and Regional page menu Icon was sourced at <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> 
 *  The Map Markers Icon was sourced at <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a>
 * The Quiz Home page Icon was sourced at <a href="https://www.freepik.com/vectors/icons">rawpixel.com - www.freepik.com</a>

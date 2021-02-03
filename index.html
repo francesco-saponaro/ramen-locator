@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramen Locator | All about the Japanese magic bowl</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <script
@@ -91,7 +93,8 @@
                     <h4>Get the latest updates, recipes and news about the Ramen world</h4>
                 </div>
                 <form id="mailing-list-form" onsubmit="return sendMail(this);">
-                    <input type="email" id="email" name="emailaddress" placeholder="Email address" required>
+                    <!--pattern regex was taken from https://www.geeksforgeeks.org/html-dom-input-email-pattern-property/-->
+                    <input type="email" id="email" name="emailaddress" placeholder="Email address" pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>
@@ -166,7 +169,8 @@
                 <img src="media/images/ramen-signup.webp" alt="ramen-signup-pic">
                 <!--<a href="https://www.freepik.com/vectors/food">Food vector created by catalyststuff - www.freepik.com</a>-->
                 <form class="modal-form" onsubmit="return sendMail(this);">
-                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" required>
+                    <!--pattern regex was taken from https://www.geeksforgeeks.org/html-dom-input-email-pattern-property/-->
+                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>

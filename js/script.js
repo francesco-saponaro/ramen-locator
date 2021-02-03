@@ -47,6 +47,7 @@ tabItem.forEach(function(item) {
 });
 
 //TAB SELECTOR FUNCTIONS
+//The "selectItem" function in the script.js file was taken from Traversy Media, https://www.traversymedia.com
 function selectItem() {
     removeTabActive();
     removeTabContent();

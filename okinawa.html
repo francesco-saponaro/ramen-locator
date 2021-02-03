@@ -105,7 +105,7 @@
                 <img src="media/images/ramen-signup.webp" alt="ramen-signup-pic">
                 <!--<a href="https://www.freepik.com/vectors/food">Food vector created by catalyststuff - www.freepik.com</a>-->
                 <form class="modal-form" onsubmit="return sendMail(this);">
-                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" required>
+                    <input type="email" class="modal-email" name="emailaddress" placeholder="Email address" pattern="[a-z0-9._]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <button type="submit" class="button">SUBSCRIBE</button>
                 </form>
             </div>
