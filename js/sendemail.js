@@ -1,3 +1,9 @@
+let mailingListform = document.getElementById("mailing-list-form");
+let modalForm = document.querySelectorAll(".modal-form");
+let email = document.getElementById("email");
+let modalEmail = document.querySelectorAll(".modal-email");
+let modalCnt = document.querySelector(".modal-content");
+
 //EMAIL.JS FUNCTION
 function sendMail(contactForm) {
     emailjs.send("service_jfwabq8", "ramen-locator", {
@@ -11,40 +17,53 @@ function sendMail(contactForm) {
     return false;  
 }
 
-//CLEAR TEXT ON SUBMISSION
-let form = document.getElementById("form");
-let modalForm = document.querySelectorAll(".modal-form");
-let email = document.getElementById("email");
-let modalEmail = document.querySelectorAll(".modal-email");
-let modalCnt = document.querySelector(".modal-content");
-
-function clearValue(input) {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (re.test(input.value.trim())) {
-    input.value = "";
-  }
+//MAIN PAGE MAILING LIST EVENT LISTENER
+if(mailingListform){
+    mailingListform.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearValue(email);
+    });
 }
 
-//all pages modal form event listener
+//ALL PAGES MODAL EVENT LISTENER
 modalForm.forEach(function(forms) {
     forms.addEventListener('submit', function(e) {
         e.preventDefault();
         modalEmail.forEach(function(emails) {
-            clearValue(emails);
-            modalCnt.innerHTML = `
-                <h3>Welcome to the Ramen world!</h3>
-                <img src="media/images/submission-pic.webp" alt="submission-pic">
-            `;
-            //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
+            modalClearValue(emails);
         });
     });
 });
 
-//main page mailing list event listener
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  clearValue(email);
-});
+//CLEAR TEXT ON SUBMISSION
+function clearValue(input) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(input.value.trim())) {
+    input.value = "";
+  } else {
+      input.value = "Please add a correct Email";
+      setTimeout(function() {
+          input.value = "";
+      }, 1500);
+  }
+}
+
+function modalClearValue(input) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (re.test(input.value.trim())) {
+    modalCnt.innerHTML = `
+                <h3>Welcome to the Ramen world!</h3>
+                <img src="media/images/submission-pic.webp" alt="submission-pic">
+            `;
+            //<a href='https://www.freepik.com/vectors/food'>Food vector created by catalyststuff - www.freepik.com</a>
+  } else {
+      input.value = "Please add a correct Email";
+      setTimeout(function() {
+          input.value = "";
+      }, 1500);
+  }
+}
+
 
 
 

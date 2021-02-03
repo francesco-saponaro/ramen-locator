@@ -59,7 +59,7 @@
     right:30px;
     width: 65px;
     height:65px;
-    background: url(//francesc-droid.github.io/ramen-locator/media/images/ramen-menu-icon.png);
+    background: url("/media/images/ramen-menu-icon.png");
     /**Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>**/
     background-position: center;
     background-repeat: no-repeat;
@@ -843,6 +843,9 @@ footer p {
     .menu ul li {
         margin-top: 35px;
     }
+    .mailing-list form input {
+        width: 400px;
+    }
 }
 
 @media (max-width:420px) {
@@ -971,7 +974,7 @@ footer p {
         left: 9px;
     }
     .mailing-list form input {
-        width:650px;
+        width:150px;
     }
     .mailing-list form .button {
         width:100px;
