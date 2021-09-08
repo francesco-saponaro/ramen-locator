@@ -522,7 +522,7 @@ footer p {
 }
 
 .window-modal {
-    width:60%;
+    width:90%;
 }
 
 .window-modal h3 {
@@ -838,6 +838,10 @@ footer p {
     }
     .modal {
         width:500px;
+    }
+
+    .window-modal {
+        width:90% !important;
     }
 }
 
