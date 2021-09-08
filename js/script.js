@@ -6,6 +6,8 @@ let closeMenu = document.getElementById("close-menu");
 let modalOpen = document.getElementById("modal-open");
 let modalClose = document.getElementById("modal-close");
 let modal = document.getElementById("modal");
+let windowModalClose = document.getElementById("window-modal-close");
+let windowModal = document.getElementById("window-modal");
 
 //EVENT LISTENERS
 //show menu
@@ -71,4 +73,22 @@ function removeTabContent() {
     });
 }
 
+//google maps feature open modal
+window.onload = (event) => {
+    windowModal.classList.add("show-modal");
+};
+
+//google maps feature close modal
+windowModalClose.addEventListener("click", function() {
+    windowModal.classList.remove("show-modal");
+});
+
+//google maps feature close modal on window click
+window.addEventListener("click", function(e) {
+    if(e.target === windowModal) {
+        windowModal.classList.remove("show-modal");
+    } else {
+        return false;
+    }
+});
 
